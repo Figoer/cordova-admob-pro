@@ -1,5 +1,3 @@
-# AdMob Plugin Pro #
-
 ### Show Mobile Ad with single line of javascript code ###
 
 Step 1: Create Ad Unit Id for your banner and interstitial, in [AdMob portal](http://www.admob.com/), then write it in your javascript code.
@@ -70,21 +68,11 @@ Highlights:
 - [x] Up to date: Latest SDK and Android Google play services.
 - [x] Good support: Actively maintained, prompt response.
 
-Maximize your revenue with mediation adapters:
-* [x] AdMob (built-in)
-* [x] DFP (DoubleClick for Publisher, built-in)
-* [x] Facebook Audience Network
-* [x] Flurry
-* [x] iAd
-* [x] InMobi
-* [x] Millennial Media
-* [x] MobFox
-
 ## How to use? ##
 
 * If use with Cordova CLI:
 ```bash
-cordova plugin add cordova-plugin-admobpro
+cordova plugin add cordova-plugin-admob
 ```
 
 * If use with PhoneGap Buid, just configure in config.xml:
@@ -110,11 +98,11 @@ Plugin ID: com.google.cordova.admob
     cordova platform add ios
 
     # now add the plugin, cordova CLI will handle dependency automatically
-    cordova plugin add cordova-plugin-admobpro
+    cordova plugin add cordova-plugin-admob
 
     # now remove the default www content, copy the demo html file to www
     rm -r www/*;
-    cp plugins/cordova-plugin-admobpro/test/* www/;
+    cp plugins/cordova-plugin-admob/test/* www/;
 
 	# now build and run the demo in your device or emulator
     cordova prepare; 
@@ -122,18 +110,6 @@ Plugin ID: com.google.cordova.admob
     cordova run ios;
     # or import into Xcode / eclipse
 ```
-
-Optional mediations to increase your revenue (Read about [AdMob Mediation Networks](https://developers.google.com/mobile-ads-sdk/docs/admob/android/mediation-networks)):
-```bash
-cordova plugin add com.google.cordova.admob-facebook
-cordova plugin add com.google.cordova.admob-flurry
-cordova plugin add com.google.cordova.admob-iad
-cordova plugin add com.google.cordova.admob-inmobi
-cordova plugin add com.google.cordova.admob-mmedia
-cordova plugin add com.google.cordova.admob-mobfox
-```
-
-Notice: If you want to add multiple mediations, please balance flexibility and binary size.
 
 ## Javascript API Overview ##
 
@@ -198,7 +174,6 @@ Android Interstitial |
 
 Some tips from recent stat data, FYI.
 
-- [x] Using AdMob Plugin Pro, higher and more stable fill rate. 
 - [x] Using Interstitial, 5-10 times profit than banner Ad. 
 - [x] Using SMART_BANNER, avoid using BANNER or FULL_BANNER.
 

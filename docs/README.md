@@ -7,7 +7,7 @@ Present AdMob Ads in Mobile App/Games natively from JavaScript.
 
 * If use with Cordova CLI:
 ```bash
-cordova plugin add com.google.cordova.admob
+cordova plugin add cordova-plugin-admob
 ```
 
 * If use with PhoneGap Buid, just configure in config.xml:
@@ -33,11 +33,11 @@ Plugin ID: com.google.cordova.admob
     cordova platform add ios
 
     # now add the plugin, cordova CLI will handle dependency automatically
-    cordova plugin add com.google.cordova.admob
+    cordova plugin add cordova-plugin-admob
 
     # now remove the default www content, copy the demo html file to www
     rm -r www/*;
-    cp plugins/com.google.cordova.admob/test/* www/;
+    cp plugins/cordova-plugin-admob/test/* www/;
 
 	# now build and run the demo in your device or emulator
     cordova prepare; 
@@ -45,18 +45,6 @@ Plugin ID: com.google.cordova.admob
     cordova run ios;
     # or import into Xcode / eclipse
 ```
-
-Optional mediations to increase your revenue (Read about [AdMob Mediation Networks](https://developers.google.com/mobile-ads-sdk/docs/admob/android/mediation-networks)):
-```bash
-cordova plugin add com.google.cordova.admob-facebook
-cordova plugin add com.google.cordova.admob-flurry
-cordova plugin add com.google.cordova.admob-iad
-cordova plugin add com.google.cordova.admob-inmobi
-cordova plugin add com.google.cordova.admob-mmedia
-cordova plugin add com.google.cordova.admob-mobfox
-```
-
-Notice: If you want to add multiple mediations, please balance flexibility and binary size.
 
 ## Quick Start Example Code ##
 
